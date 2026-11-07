@@ -18,6 +18,22 @@ Here are some quick setup guide.
 - [XCode](https://developer.apple.com/xcode/) (for iOS)
 - [Android SDK](https://developer.android.com/studio/index.html) (for Android, with or without Android Studio)
 
+## Clone the Repository
+
+The webview frontend (AI 學習村) lives in its own repo and is linked as a git submodule at `frontend/`. Clone with submodules to get it:
+
+``` bash
+git clone --recurse-submodules https://github.com/bp-xzs/townpass-2026.git
+```
+
+Already cloned without it, or after pulling a submodule bump:
+
+``` bash
+git submodule update --init
+```
+
+This is repo structure only: the app loads the deployed site (https://bp-xzs.github.io/townpass-2026-frontend/), so you do not need to build the submodule to run Town Pass.
+
 ## Build the Project
 
 1. Get the packages project needed:
